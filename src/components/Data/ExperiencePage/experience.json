@@ -1,0 +1,47 @@
+{
+    "experience": [
+        {
+            "title": "2021 - today",
+            "cardTitle": "Freelancer Web Developer",
+            "cardSubtitle": "Writing code every day and loving doing so. I'm taking projects of all kinds, these are the main ones:",
+            "cardDetailedText": [
+
+            ],
+            "url" : "/projects"
+        },
+        {
+            "title": "2018 - 2020",
+            "cardTitle": "Operations Manager (Zambia) *CORONA*",
+            "cardSubtitle": "Operations Manager - Busy border crossing between Zambia and DRC. During this time, I did some of the following:",
+            "cardDetailedText": [
+                "Managing all employees (263)",
+                "Managing smart traffic flow (1.5k pd)",
+                "Daily communication with shareholders"
+            ]
+        },
+        {
+            "title": "2015 - 2018",
+            "cardTitle": "Owner (Mexico)",
+            "cardSubtitle": "Owner - I started a tourism company with a friend in Bacalar, Quintana Roo. This might be relevant:",
+            "cardDetailedText": [
+                "Build a website with Wix",
+                "Advertising and marketing",
+                "Wakeboards & tours"
+            ]
+        },
+        {
+            "title": "2012 - 2015",
+            "cardTitle": "Logistics Manager (South Africa)",
+            "cardSubtitle": "Logistical Manager - Beauty products. I was responsible for all logistical matters, here are some:",
+            "cardDetailedText": [
+                "Apartments, vehicles & POS",
+                "POS Admin"
+            ]
+        },
+        {
+            "title": "2010 - 2012",
+            "cardTitle": "Security Project (Equatorial Guinea)",
+            "cardSubtitle": "Guiding locals in Spanish"
+        }
+    ]
+}

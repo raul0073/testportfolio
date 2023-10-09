@@ -1,0 +1,96 @@
+@import "./../variables.scss";
+
+.timeline {
+  margin-top: 20vh;
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+  .header {
+    text-align: center;
+    h2.animate.ex {
+      padding: 0;
+      animation-delay: 1s;
+      @media (max-width: 780px) {
+        padding: 0;
+        margin: 0;
+        font-size: 4rem;
+      }
+    }
+  }
+  .wrapper {
+    width: 50%;
+    @media (max-width: 810px) {
+      width: 90%;
+      padding: 0;
+      margin: 0;
+    }
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    &.animate {
+      -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
+      animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+      @-webkit-keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        100% {
+          -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        100% {
+          -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+          opacity: 1;
+        }
+      }
+    }
+
+    .projectDetails {
+      padding: 0;
+      background-color: white;
+      border-radius: 1rem;
+      padding: 0.2rem;
+      width: 100%;
+      ul {
+        padding: 0;
+        list-style: none;
+        li {
+          font-size: 0.9rem;
+          text-align: left;
+          color: gray;
+          padding: 0.2rem;
+        }
+      }
+    }
+
+    .card {
+      width: 100%;
+    }
+
+    .card-subtitle {
+      color: white;
+      font-weight: 100;
+    }
+    .my-controls {
+      display: none;
+    }
+
+    .card-detailed {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

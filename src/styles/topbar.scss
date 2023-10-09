@@ -1,0 +1,25 @@
+@import url(https://db.onlinewebfonts.com/c/7f68a670100a48f475fc330a0eb0cc92?family=AxureHandwriting);
+@import url("https://fonts.cdnfonts.com/css/libre-franklin");
+@import './../variables.scss';
+
+.topbar{
+    width: 100%;
+    height: 10vh;
+    background-color: $bgLightDark;
+    margin: 0;
+    
+    .container{
+        
+        .logo{
+            font-family: 'AxureHandwriting';
+            font-size: 3rem;
+            text-align: center;
+            
+            p{
+                font-size: 1rem;
+                font-family: 'libre franklin';
+                font-weight: 800;
+                            }
+        }
+    }
+}

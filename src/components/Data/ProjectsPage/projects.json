@@ -1,0 +1,127 @@
+{
+  "projects": [
+    {
+      "name": "Cleaners Service",
+      "subTitle": "Cleaners services landing page",
+      "description": "Next.js & React project",
+      "url": "http://www.lrv.co.il",
+      "git": "",
+      "tech": [
+        "React",
+        "Sass",
+        "AWS"
+      ],
+      "thumbnail": "https://razportfolio.s3.eu-central-1.amazonaws.com/assets/projectsBox/project_lrv.png"
+    },
+    {
+      "name": "Synagogue book-keeping",
+      "subTitle": "Local synagogue management webapp",
+      "description": "Full stack webapp for local synagogue (probono). Made with React, MongoDB using Node.js and AWS services. Includes admin panel",
+      "url": "http://tiferetisrael.s3-website.eu-central-1.amazonaws.com/",
+      "git": "http://tiferetisrael.s3-website.eu-central-1.amazonaws.com/",
+      "tech": [
+        "React",
+        "Sass",
+        "NodeJs",
+        "MongoDB",
+        "AWS"
+      ],
+      "thumbnail": "https://razportfolio.s3.eu-central-1.amazonaws.com/assets/projectsBox/project_tiferet.jpg"
+    },
+    {
+      "name": "Movies subscriptions",
+      "subTitle": "Movies subscription management",
+      "description": "Developed a full-stack web application using React and Node.js/WebAPI for movie and subscription management. Implemented user authentication, CRUD operations for movies and members, and dynamic subscription management. Users can search, edit, and delete data, making movie and subscription management efficient and user-friendly.",
+      "url": "http://moviesappproject.s3-website.eu-central-1.amazonaws.com/",
+      "git": "",
+      "tech": [
+        "React",
+        "Sass",
+        "NodeJs",
+        "MongoDB"
+      ],
+      "thumbnail": "https://razportfolio.s3.eu-central-1.amazonaws.com/assets/projectsBox/project_movies.png"
+    },
+    {
+      "name": "Talshir IBC",
+      "subTitle": "",
+      "description": "",
+      "url": "www.lrv.co.il",
+      "git": "",
+      "tech": [
+        "React",
+        "Sass",
+        "AWS"
+      ]
+    },
+    {
+      "name": "eCommerce React",
+      "subTitle": "eCommerce api products with Redux",
+      "description": "Small React SPA with products api, focusing on product presenting and user experience. I used Redux store management system and presented the user with the overall shopping items",
+      "url": "http://react-ecommerce-demo.s3-website.eu-central-1.amazonaws.com",
+      "git": "",
+      "tech": [
+        "React",
+        "Sass",
+        "AWS"
+      ],
+      "thumbnail": "https://razportfolio.s3.eu-central-1.amazonaws.com/assets/projectsBox/project_ecommerce_rea.png"
+    },
+    {
+      "name": "eCommerce Angular",
+      "subTitle": "eCommerce api products",
+      "description": "Small Angular SPA with products api. presenting products and cart adding",
+      "url": "http://angular-ecommerce-demo.s3-website.eu-central-1.amazonaws.com/home",
+      "git": "",
+      "tech": [
+        "TypeScript",
+        "Angular",
+        "Sass"
+      ],
+      "thumbnail": "https://razportfolio.s3.eu-central-1.amazonaws.com/assets/projectsBox/project_ecommerce_ang.png"
+    },
+    {
+      "name": "Factory management system",
+      "subTitle": "Factory management system",
+      "description": "JS Vanilla project, management system for factory employees with shifts and departments. Database SQL using .NET server",
+      "url": "http://dotnetfinal.s3-website.eu-central-1.amazonaws.com/",
+      "git": "",
+      "tech": [
+        "JavaScript",
+        "NodeJs",
+        "Sass",
+        "Csharp",
+        "SQL"
+      ],
+      "thumbnail": "https://razportfolio.s3.eu-central-1.amazonaws.com/assets/projectsBox/project_factory.png"
+    },
+    {
+      "name": "Users Posts & Tasks",
+      "subTitle": "Users dashboard management",
+      "description": "Full Stack project developed with Angular, Node.js and MongoDB. Features user management, task tracking, posts and dynamic UI updates. Allows searching, adding, updating and deleting user data with a user-friendly interface.",
+      "url": "www.lrv.co.il",
+      "git": "",
+      "tech": [
+        "TypeScript",
+        "Angular",
+        "Sass",
+        "NodeJs",
+        "MongoDB"
+      ],
+      "thumbnail": "https://razportfolio.s3.eu-central-1.amazonaws.com/assets/projectsBox/21.png"
+    },
+    {
+      "name": "Guess a random country",
+      "subTitle": "Rest api quiz game",
+      "description": "Vanilla JS project. A random country is picked each day, follow the clues to reveal the selected country",
+      "url": "http://guessacountry.s3-website.eu-central-1.amazonaws.com/",
+      "git": "",
+      "tech": [
+        "JavaScript",
+        "Sass",
+        "AWS"
+      ],
+      "thumbnail": "https://razportfolio.s3.eu-central-1.amazonaws.com/assets/projectsBox/project_grc.png"
+    }
+  ]
+}

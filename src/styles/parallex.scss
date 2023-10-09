@@ -1,0 +1,13 @@
+.container {
+  height: 30vh; 
+  position: relative;
+  width: 100% !important;
+  background-image: url('./../assets/e.png');
+  background-size: cover;
+  background-position: top right;
+  background-attachment: fixed;
+  padding: 0;
+  filter: grayscale(.8);
+  opacity: .2;
+
+}

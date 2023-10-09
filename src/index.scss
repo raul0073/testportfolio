@@ -1,0 +1,246 @@
+@import "./variables.scss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body,
+html {
+  margin: 0;
+  overflow-x: hidden;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 1rem;
+  font-weight: 800;
+  width: fit-content;
+  border: 1px solid white;
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  margin: 1rem 0;
+  cursor: pointer;
+  color: white;
+  transition: 0.4s ease;
+
+  &::after {
+    content: "\2192";
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  &:hover {
+    background-color: $actionDark;
+    border-radius: 0.5rem;
+    color: rgb(0, 0, 0);
+    border-color: transparent;
+    &::after {
+      opacity: 0.4;
+      scale: 1.1;
+    }
+  }
+
+  -webkit-animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+    3s;
+  animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 3s;
+
+  @-webkit-keyframes scale-in-tl {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-tl {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+}
+
+.content {
+  transition: animation 0.6s ease-in-out;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  background-color: $bgDark;
+  box-shadow: 0px 0px 10px $bgDark;
+  border: 0.1px solid $bgLightDark;
+  padding: 2rem;
+
+  &:hover {
+    filter: saturate(1.4);
+    &::after,
+    &::before {
+      border-color: $yellow;
+    }
+  }
+
+  &.light {
+
+    &:hover {
+      &::before,
+      &::after {
+        border-color: teal;
+      }
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    transition: 0.5s ease;
+    margin: 0.5rem;
+  }
+  &::before {
+    top: 0;
+    left: 0;
+    border: 1px solid $bgDark;
+    border-top-left-radius: 0;
+    border-width: 2px 0 0 2px;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    border: 1px solid $bgDark;
+    border-bottom-right-radius: 0;
+    border-width: 0 2px 2px 0;
+  }
+
+  &:hover {
+    &::after {
+      border-radius: 0;
+      border-color: $yellow;
+      width: 40%;
+      height: 40%;
+    }
+    &::before {
+      border-radius: 0;
+      border-color: $yellow;
+      width: 40%;
+      height: 40%;
+    }
+  }
+
+  &.box::before,
+  &.box::after {
+    content: none;
+  }
+}
+
+.header {
+  h2 {
+    font-size: 6rem;
+    position: relative;
+    letter-spacing: 0.2rem;
+    padding: 0;
+    opacity: 0;
+    margin: 0;
+    &.animate {
+      -webkit-animation: slide-topAbout 0.5s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slide-topAbout 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+      @-webkit-keyframes slide-topAbout {
+        0% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        100% {
+          -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+          opacity: 0.8;
+        }
+      }
+      @keyframes slide-topAbout {
+        0% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        100% {
+          -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+
+  h3 {
+    width: 35%;
+  }
+  &.contact {
+    justify-content: center;
+    margin-top: 1rem;
+    a {
+      color: white;
+      position: relative;
+    }
+  }
+  svg {
+    margin: 0 0.6rem;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    &:hover {
+      fill: $actionDark;
+    }
+  }
+}
